@@ -4793,3 +4793,8 @@ See the **[Custom Components Guide](./CUSTOM_COMPONENTS.md)**
 [Contributing Guide](./CONTRIBUTING.md)
 
 A massive thank you to [everyone who contributes](https://github.com/garmeeh/@opensourceframework/next-seo/graphs/contributors) to this project 👏
+
+
+---
+
+Maintained by @opensourceframework in the [monorepo](https://github.com/riceharvest/opensourceframework).
