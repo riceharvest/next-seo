@@ -19,11 +19,13 @@ This guide walks through the process of adding new JSON-LD structured data compo
 Before implementing, thoroughly research the structured data specification:
 
 1. **Visit Google's Documentation**
+
    - Go to [Google's Structured Data Gallery](https://developers.google.com/search/docs/appearance/structured-data/search-gallery)
    - Find the specific type you're implementing (e.g., Article, Product, Recipe)
    - Note all required and recommended properties
 
 2. **Analyze Schema Types**
+
    - Identify all subtypes (e.g., Article has NewsArticle, BlogPosting, Blog)
    - Note property variations between types
    - Check for special formatting requirements (dates, images, etc.)
@@ -519,10 +521,12 @@ Developer will run e2e manually as they can take a long time.
 The library now provides shared utilities to avoid code duplication:
 
 1. **Common Types** (`~/types/common.types.ts`):
+
    - `ImageObject`, `Person`, `Organization`, `Author`
    - Base interfaces like `Thing`
 
 2. **Processing Functions** (`~/utils/processors.ts`):
+
    - `processAuthor(author: Author): Person | Organization`
    - `processImage(image: string | ImageObject): string | ImageObject`
 
@@ -579,12 +583,15 @@ Support both single items and arrays:
 ### Common Issues
 
 1. **ESLint errors about unused React import**
+
    - Remove `import React from 'react'` - it's not needed with modern JSX transform
 
 2. **Test failures with dateModified**
+
    - Remember that dateModified defaults to datePublished when not provided
 
 3. **Boolean properties not appearing**
+
    - Use `!== undefined` check instead of truthy check for booleans
 
 4. **Type errors with union types**

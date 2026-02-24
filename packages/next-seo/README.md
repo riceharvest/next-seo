@@ -6,6 +6,8 @@
 - **Original Repository**: https://github.com/garmeeh/next-seo
 - **Original License**: MIT
 
+
+
 ```bash
 npm install @opensourceframework/next-seo
 # or
